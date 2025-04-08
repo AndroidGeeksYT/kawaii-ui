@@ -4,8 +4,7 @@ local cmp_ui = require("nvconfig").ui.cmp
 local icon = cmp_ui.format_colors.icon .. " "
 
 M.tailwind = function(entry, item, kind_txt)
-  local entryItem = entry:get_completion_item()
-  local color = entryItem.documentation
+  local color = entry.completion_item.documentation
 
   if color and type(color) == "string" and color:match "^#%x%x%x%x%x%x$" then
     local hl = "hex-" .. color:sub(2)
