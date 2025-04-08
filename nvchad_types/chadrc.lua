@@ -177,4 +177,4 @@
 
 ---@class NvCmpFormatColors
 ---@field icon? string # icon to use for color swatches
----@field tailwind? boolean # show colors from tailwind/css/astro lsp in menu
+---@field lsp? boolean # show colors from tailwind/css/astro lsp in menu
