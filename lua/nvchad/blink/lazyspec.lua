@@ -1,4 +1,4 @@
--- BETA 
+-- BETA
 --  TO use this put this in your plugins table
 -- { import = "nvchad.blink.lazyspec" },
 
@@ -22,6 +22,14 @@ return {
           require("luasnip").config.set_config(opts)
           require "nvchad.configs.luasnip"
         end,
+      },
+
+      {
+        "windwp/nvim-autopairs",
+        opts = {
+          fast_wrap = {},
+          disable_filetype = { "TelescopePrompt", "vim" },
+        },
       },
     },
 
