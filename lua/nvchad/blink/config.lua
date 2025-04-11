@@ -15,7 +15,7 @@ local opts = {
   },
 
   completion = {
-
+    ghost_text = { enabled = true },
     documentation = {
       auto_show = true,
       auto_show_delay_ms = 200,
@@ -23,7 +23,7 @@ local opts = {
     },
 
     -- from nvchad/ui plugin
-    -- exporting the ui config of nvchad blink menu 
+    -- exporting the ui config of nvchad blink menu
     -- helps non nvchad users
     menu = require("nvchad.blink").menu,
   },
