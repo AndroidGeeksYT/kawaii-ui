@@ -135,6 +135,12 @@ error("Requiring a meta file")
 ---@field SagaNormal? Base46HLGroups # highlight group for lspsaga
 ---@field SagaBorder? Base46HLGroups # highlight group for lspsaga
 ---@field Repeat? Base46HLGroups # highlight group for syntax
+---@field RenderMarkdownH6Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH5Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH4Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH3Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH2Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH1Bg? Base46HLGroups # highlight group for render-markdown
 ---@field Removed? Base46HLGroups # highlight group for defaults
 ---@field RainbowDelimiterYellow? Base46HLGroups # highlight group for rainbowdelimiters
 ---@field RainbowDelimiterViolet? Base46HLGroups # highlight group for rainbowdelimiters
@@ -840,6 +846,12 @@ error("Requiring a meta file")
 ---@field SagaNormal? Base46HLGroups # highlight group for lspsaga
 ---@field SagaBorder? Base46HLGroups # highlight group for lspsaga
 ---@field Repeat? Base46HLGroups # highlight group for syntax
+---@field RenderMarkdownH6Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH5Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH4Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH3Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH2Bg? Base46HLGroups # highlight group for render-markdown
+---@field RenderMarkdownH1Bg? Base46HLGroups # highlight group for render-markdown
 ---@field Removed? Base46HLGroups # highlight group for defaults
 ---@field RainbowDelimiterYellow? Base46HLGroups # highlight group for rainbowdelimiters
 ---@field RainbowDelimiterViolet? Base46HLGroups # highlight group for rainbowdelimiters
@@ -1482,6 +1494,7 @@ error("Requiring a meta file")
 ---| "'nvshades'"
 ---| "'orgmode'"
 ---| "'rainbowdelimiters'"
+---| "'render-markdown'"
 ---| "'semantic_tokens'"
 ---| "'statusline'"
 ---| "'syntax'"
