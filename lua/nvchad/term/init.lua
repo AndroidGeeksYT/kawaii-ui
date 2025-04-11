@@ -104,8 +104,9 @@ local function create(opts)
 
   save_term_info(opts.buf, opts)
 
+  opts.termopen_opts = vim.tbl_extend("force", opts.termopen_opts or {}, { term = true })
   if not buf_exists then
-    vim.fn.termopen(cmd, opts.termopen_opts or { detach = false })
+    vim.fn.jobstart(cmd, opts.termopen_opts)
   end
 
   vim.g.nvhterm = opts.pos == "sp"
