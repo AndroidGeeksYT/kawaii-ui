@@ -58,7 +58,9 @@ M.close_buffer = function(bufnr)
       -- handle unlisted
     elseif not vim.bo.buflisted then
       local tmpbufnr = vim.t.bufs[1]
-      api.nvim_set_current_win(vim.fn.bufwinid(tmpbufnr))
+      local winid = vim.fn.bufwinid(tmpbufnr)
+      winid = winid ~= -1 and winid or 0
+      api.nvim_set_current_win(winid)
       api.nvim_set_current_buf(tmpbufnr)
       vim.cmd("bw" .. bufnr)
       return
