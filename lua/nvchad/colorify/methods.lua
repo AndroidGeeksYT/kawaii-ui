@@ -48,6 +48,11 @@ M.lsp_var = function(buf, line, min, max)
         for _, match in ipairs(resp or {}) do
           local color = match.color
           local r, g, b, a = color.red, color.green, color.blue, color.alpha
+
+          if a > 1 then
+            a = a / 255
+          end
+
           local hex = string.format("#%02x%02x%02x", r * a * 255, g * a * 255, b * a * 255)
 
           local hl_group = utils.add_hl(hex)
