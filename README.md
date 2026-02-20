@@ -57,6 +57,8 @@ Base46 setup
 - Each tab will have its own set of buffers stored, and the tabufline will show those only.
 - Think of it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
 
+[kawaii - Maintain buffers per tab!  ( tabufline )  ｜ Neovim [V_9iJ96U_k8].webm](https://github.com/user-attachments/assets/ff3026f3-7943-4f71-9cba-373035d9b4c5)
+
 ## Statusline 
 
 - Statusline with 4 different styles
