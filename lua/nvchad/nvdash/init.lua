@@ -126,7 +126,7 @@ M.open = function(buf, win, action)
                 w = groups_maxw[v.group] or btn_widths[i]
             end
 
-            col = math.floor((winw / 2) - math.floor(w / 2))
+            col = math.floor((winw / 2) - math.floor(w / 2)) + 1
             opt = { virt_text_win_col = col, virt_text = multicolumn_virt_texts(v, w, btn_widths[i]) }
         else
             local str = type(v.txt) == "string" and v.txt or v.txt()
@@ -136,7 +136,7 @@ M.open = function(buf, win, action)
 
             str = v.rep and string.rep(str, w) or str
             str = v.keys and btn_gap(str, v.keys, w) or str
-            col = math.floor((winw / 2) - math.floor(w / 2))
+            col = math.floor((winw / 2) - math.floor(w / 2)) + 1
             opt = { virt_text_win_col = col, virt_text = { { str, v.hl or "NvdashButtons" } } }
         end
 
@@ -161,7 +161,7 @@ M.open = function(buf, win, action)
     -- if screen height is small
     winh = dashboard_h > winh and dashboard_h or winh
 
-    local row_i = math.floor((winh / 2) - (dashboard_h / 2))
+    local row_i = math.floor((winh / 2) - (dashboard_h / 2)) + 1
 
     for i, v in ipairs(key_lines) do
         key_lines[i].i = v.i + row_i + 1
