@@ -89,7 +89,7 @@ Base46 setup
 ![image](https://github.com/user-attachments/assets/b8ac8c83-f440-4513-b283-ace1aa99eb92)
 ![image](https://github.com/user-attachments/assets/49d88e64-e185-4992-adde-c5e815a53975)
 ![image](https://github.com/user-attachments/assets/d80bb30a-f18f-44a5-8034-78a3bd2c2c17)
-<!--TODO: edit nvdash later-->
+
 ## Nvdash
 
 - 150 ~ LOC Dashboard module, minimal & nothing fancy!
@@ -115,7 +115,7 @@ Base46 setup
 - With 3 different styles : bordered, compact, flat
 
 ![image](https://github.com/user-attachments/assets/897e46f1-9ae2-4cc2-8fa2-64eff40a90dd)
-<--TODO: edit nvcheatsheet later-->
+
 ## NvCheatsheet
 
 - Auto-generated mappings cheatsheet module, which has a similar layout to that of CSS's masonry layout.
