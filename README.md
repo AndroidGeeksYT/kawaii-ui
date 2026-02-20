@@ -1,3 +1,15 @@
+<p align='center'>
+<img src="https://img.shields.io/badge/Maintained%3F-YES-cyan?style=for-the-badge">
+<img src="https://img.shields.io/github/license/AndroidGeeksYT/kawaii-ui?color=cyan&style=for-the-badge">
+<img src="https://img.shields.io/github/stars/AndroidGeeksYT/kawaii-ui?color=cyan&style=for-the-badge&cache=1">
+<img src="https://img.shields.io/github/forks/AndroidGeeksYT/kawaii-ui?color=cyan&style=for-the-badge">
+<img src="https://img.shields.io/github/issues/AndroidGeeksYT/kawaii-ui?color=cyan&style=for-the-badge">
+</p>
+
+<p align="center">
+<img src="https://github.com/AndroidGeeksYT/AndroidGeeksYT/blob/main/assets/gif/shiroko.gif?raw=true" width="400" alt="Shiroko">
+</p>
+
 # Kawaii UI Plugin 
 
 This ui plugin is a collection of many UI modules like statusline, tabline, cheatsheet, nvdash and much more!
