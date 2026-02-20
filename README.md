@@ -1,4 +1,4 @@
-# NvChad UI Plugin 
+# Kawaii UI Plugin 
 
 This ui plugin is a collection of many UI modules like statusline, tabline, cheatsheet, nvdash and much more!
 - Docs at `:h nvui` 
@@ -6,7 +6,7 @@ This ui plugin is a collection of many UI modules like statusline, tabline, chea
 ## Install
 
 - Create `lua/chadrc.lua` file that returns a table, can be empty table too.
-- Table structure must be same as [nvconfig.lua](https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua)
+- Table structure must be same as [nvconfig.lua](https://github.com/AndroidGeeksYT/kawaii-ui/blob/v3.0/lua/nvconfig.lua)
 
 In your plugins file
 ```lua
@@ -14,14 +14,14 @@ In your plugins file
  { "nvim-tree/nvim-web-devicons", lazy = true },
 
  {
-   "nvchad/ui",
+   "AndroidGeeksYT/kawaii-ui",
     config = function()
-      require "nvchad" 
+      require "kawaii" 
     end
  },
 
  {
-    "nvchad/base46",
+    "AndroidGeeksYT/kawaii-base",
     lazy = true,
     build = function()
       require("base46").load_all_highlights()
@@ -57,13 +57,11 @@ Base46 setup
 - Each tab will have its own set of buffers stored, and the tabufline will show those only.
 - Think of it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
 
-[NvChad - Maintain buffers per tab!  ( tabufline )  ｜ Neovim [V_9iJ96U_k8].webm](https://github.com/user-attachments/assets/ff3026f3-7943-4f71-9cba-373035d9b4c5)
-
 ## Statusline 
 
 - Statusline with 4 different styles
 
-![nvchad statusline](https://nvchad.com/features/statuslines.webp)
+![kawaii statusline](https://nvchad.com/features/statuslines.webp)
 
 ## Term 
 
@@ -73,7 +71,7 @@ Base46 setup
 
 ## Lsp Signature
 
-- Minimal signature window ( [50 LOC ~](https://github.com/NvChad/ui/blob/v3.0/lua/nvchad/lsp/signature.lua)), just uses `vim.lsp.buf.signature_help` on some autocmds.
+- Minimal signature window ( [50 LOC ~](https://github.com/AndroidGeeksYT/kawaii-ui/blob/v3.0/lua/nvchad/lsp/signature.lua)), just uses `vim.lsp.buf.signature_help` on some autocmds.
 
 ![image](https://github.com/user-attachments/assets/b2db5cd1-a81b-41a7-a132-7d2dc15edf39)
 
@@ -91,7 +89,7 @@ Base46 setup
 ![image](https://github.com/user-attachments/assets/b8ac8c83-f440-4513-b283-ace1aa99eb92)
 ![image](https://github.com/user-attachments/assets/49d88e64-e185-4992-adde-c5e815a53975)
 ![image](https://github.com/user-attachments/assets/d80bb30a-f18f-44a5-8034-78a3bd2c2c17)
-
+<!--TODO: edit nvdash later-->
 ## Nvdash
 
 - 150 ~ LOC Dashboard module, minimal & nothing fancy!
@@ -101,7 +99,7 @@ Base46 setup
 ## Cmp styles
 
 - A lot of cmp theming with base46!
-- Do know that nvchad's base46 has like 68 themes, so dont judge the screenshots by colors!
+- Do know that kawaii's base46 has like 68 themes, so dont judge the screenshots by colors!
 - Support for Tailwind & Css LSP colors
 
 ![image](https://github.com/user-attachments/assets/661bbc0f-7073-4b4c-81cb-7cf035e29d6f)
@@ -117,7 +115,7 @@ Base46 setup
 - With 3 different styles : bordered, compact, flat
 
 ![image](https://github.com/user-attachments/assets/897e46f1-9ae2-4cc2-8fa2-64eff40a90dd)
-
+<--TODO: edit nvcheatsheet later-->
 ## NvCheatsheet
 
 - Auto-generated mappings cheatsheet module, which has a similar layout to that of CSS's masonry layout.
@@ -145,9 +143,9 @@ check `:h nvui.mason` for more info
 
 ## :gift_heart: Support
 
-If you like NvChad or its plugins and would like to support it via donation
+If you like kawaii or its plugins and would like to support it via donation
 
-[![kofi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/siduck)
-[![paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/siduck13)
-[![buymeacoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/siduck)
-[![patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/siduck)
+<p>
+<img src="https://github.com/AndroidGeeksYT/AndroidGeeks-Kickstart-Nvim/blob/main/img/donate.jpg">
+</p>
+
