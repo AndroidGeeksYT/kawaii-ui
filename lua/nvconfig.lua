@@ -26,7 +26,7 @@ local options = {
       theme = "default", -- default/vscode/vscode_colored/minimal
       -- default/round/block/arrow separators work only for default statusline theme
       -- round and block will work for minimal theme only
-      separator_style = "default",
+      separator_style = "round",
       order = nil,
       modules = nil,
     },
@@ -71,7 +71,7 @@ local options = {
       { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
       { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
 
-      { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
+      { txt = "─", hl = "KawaiiDashFooter", no_gap = true, rep = true },
 
       {
         txt = function()
@@ -79,12 +79,12 @@ local options = {
           local ms = math.floor(stats.startuptime) .. " ms"
           return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
         end,
-        hl = "NvDashFooter",
+        hl = "KawaiiDashFooter",
         no_gap = true,
         content = "fit",
       },
 
-      { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
+      { txt = "─", hl = "KawaiiDashFooter", no_gap = true, rep = true },
     },
   },
 

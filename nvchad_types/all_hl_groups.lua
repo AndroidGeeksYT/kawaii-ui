@@ -1,7 +1,7 @@
 ---@meta
 
 --- Don't edit or require this file
-error("Requiring a meta file")
+error "Requiring a meta file"
 
 ---@class HLGroups
 ---@field healthSuccess? Base46HLGroups # highlight group for defaults
@@ -218,7 +218,7 @@ error("Requiring a meta file")
 ---@field NvimDapViewConstant? Base46HLGroups # highlight group for dap
 ---@field NvimDapViewBoolean? Base46HLGroups # highlight group for dap
 ---@field NvShTitle? Base46HLGroups # highlight group for nvshades
----@field NvDashFooter? Base46HLGroups # highlight group for defaults
+---@field KawaiiDashFooter? Base46HLGroups # highlight group for defaults
 ---@field NvDashButtons? Base46HLGroups # highlight group for defaults
 ---@field NvDashAscii? Base46HLGroups # highlight group for defaults
 ---@field NvChSection? Base46HLGroups # highlight group for nvcheatsheet
@@ -1608,3 +1608,4 @@ error("Requiring a meta file")
 ---| "'trouble'"
 ---| "'vim-illuminate'"
 ---| "'whichkey'"
+
