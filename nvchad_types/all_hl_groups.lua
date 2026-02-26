@@ -979,9 +979,9 @@ error "Requiring a meta file"
 ---@field NvimDapViewConstant? Base46HLGroups # highlight group for dap
 ---@field NvimDapViewBoolean? Base46HLGroups # highlight group for dap
 ---@field NvShTitle? Base46HLGroups # highlight group for nvshades
----@field NvDashFooter? Base46HLGroups # highlight group for defaults
----@field NvDashButtons? Base46HLGroups # highlight group for defaults
----@field NvDashAscii? Base46HLGroups # highlight group for defaults
+---@field KawaiiDashFooter? Base46HLGroups # highlight group for defaults
+---@field KawaiiDashButtons? Base46HLGroups # highlight group for defaults
+---@field KawaiiDashAscii? Base46HLGroups # highlight group for defaults
 ---@field NvChSection? Base46HLGroups # highlight group for nvcheatsheet
 ---@field NvChHeadyellow? Base46HLGroups # highlight group for nvcheatsheet
 ---@field NvChHeadwhite? Base46HLGroups # highlight group for nvcheatsheet
