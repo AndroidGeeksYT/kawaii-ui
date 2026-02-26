@@ -1,6 +1,6 @@
 ---@meta
 
----@class ChadrcConfig
+---@class KawaiiRCConfig
 ---@field ui? UIConfig
 ---@field base46? Base46Config
 ---@field lsp? NvLspConfig
