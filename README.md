@@ -1,7 +1,8 @@
-# NvChad UI Plugin 
+# Kawaii UI Plugin
 
-This ui plugin is a collection of many UI modules like statusline, tabline, cheatsheet, nvdash and much more!
-- Docs at `:h nvui` 
+This ui plugin is a collection of many UI modules like statusline, tabline, cheatsheet, kawaiidash and much more!
+
+- Docs at `:h nvui`
 
 ## Install
 
@@ -9,6 +10,7 @@ This ui plugin is a collection of many UI modules like statusline, tabline, chea
 - Table structure must be same as [nvconfig.lua](https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua)
 
 In your plugins file
+
 ```lua
  "nvim-lua/plenary.nvim",
  { "nvim-tree/nvim-web-devicons", lazy = true },
@@ -16,7 +18,7 @@ In your plugins file
  {
    "nvchad/ui",
     config = function()
-      require "nvchad" 
+      require "nvchad"
     end
  },
 
@@ -33,11 +35,12 @@ In your plugins file
 ```
 
 Base46 setup
+
 ```lua
  -- put this in your main init.lua file ( before lazy setup )
  vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46_cache/"
 
--- put this after lazy setup 
+-- put this after lazy setup
 
 -- (method 1, For heavy lazyloaders)
  dofile(vim.g.base46_cache .. "defaults")
@@ -49,26 +52,26 @@ Base46 setup
  end
 ```
 
-## List of Features with screenshots 
+## List of Features with screenshots
 
 ## Tabufline
 
-- Mix of tabline & bufferline. 
+- Mix of tabline & bufferline.
 - Each tab will have its own set of buffers stored, and the tabufline will show those only.
 - Think of it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
 
-[NvChad - Maintain buffers per tab!  ( tabufline )  ｜ Neovim [V_9iJ96U_k8].webm](https://github.com/user-attachments/assets/ff3026f3-7943-4f71-9cba-373035d9b4c5)
+[NvChad - Maintain buffers per tab! ( tabufline ) ｜ Neovim [V_9iJ96U_k8].webm](https://github.com/user-attachments/assets/ff3026f3-7943-4f71-9cba-373035d9b4c5)
 
-## Statusline 
+## Statusline
 
 - Statusline with 4 different styles
 
 ![nvchad statusline](https://nvchad.com/features/statuslines.webp)
 
-## Term 
+## Term
 
 - Create, toggle terminals with cmd, window options ( can also be used to color each term window differently! )
-- Manage code runner 
+- Manage code runner
 - ( :Telescope terms ) to unhide [terminal buffers](https://www.youtube.com/embed/3DysWI_6YpQ) <kbd> leader + pt </kbd>.
 
 ## Lsp Signature
@@ -92,11 +95,11 @@ Base46 setup
 ![image](https://github.com/user-attachments/assets/49d88e64-e185-4992-adde-c5e815a53975)
 ![image](https://github.com/user-attachments/assets/d80bb30a-f18f-44a5-8034-78a3bd2c2c17)
 
-## Nvdash
+## Kawaiidash
 
 - 150 ~ LOC Dashboard module, minimal & nothing fancy!
- 
-![nvdash](https://github.com/user-attachments/assets/072c8733-8a44-4cf3-8732-e5fa7eb9459e)
+
+![kawaiidash](https://github.com/user-attachments/assets/072c8733-8a44-4cf3-8732-e5fa7eb9459e)
 
 ## Cmp styles
 
@@ -122,20 +125,20 @@ Base46 setup
 
 - Auto-generated mappings cheatsheet module, which has a similar layout to that of CSS's masonry layout.
 - It has 2 themes ( grid & simple )
-![img](https://nvchad.com/features/nvcheatsheet.webp)
+  ![img](https://nvchad.com/features/nvcheatsheet.webp)
 
-## Automatic Mason install 
+## Automatic Mason install
 
 - MasonInstallAll command will now capture all the mason tools from your config
 - Supported plugins are : lspconfig, nvim-lint, conform.nvim
 - So for example if you have lspconfig like this :
 
-```lua 
+```lua
 require("lspconfig").html.setup{}
 require("lspconfig").clangd.setup{}
-``` 
- 
-Then running MasonInstallAll will install both the mason pkgs 
+```
+
+Then running MasonInstallAll will install both the mason pkgs
 
 check `:h nvui.mason` for more info
 

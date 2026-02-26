@@ -2,7 +2,7 @@ local M = {}
 local api = vim.api
 local fn = vim.fn
 local strw = api.nvim_strwidth
-local opts = require("nvconfig").nvdash
+local opts = require("nvconfig").kawaiidash
 
 local map = function(keys, action, buf)
   for _, v in ipairs(keys) do
@@ -58,15 +58,15 @@ M.open = function(buf, win, action)
     end
   end
 
-  local ns = api.nvim_create_namespace "nvdash"
+  local ns = api.nvim_create_namespace "kawaiidash"
   local winh = api.nvim_win_get_height(win)
   local winw = api.nvim_win_get_width(win)
   buf = buf or vim.api.nvim_create_buf(false, true)
 
-  vim.g.nvdash_buf = buf
-  vim.g.nvdash_win = win
+  vim.g.kawaiidash_buf = buf
+  vim.g.kawaiidash_win = win
 
-  local nvdash_w = 0
+  local kawaiidash_w = 0
 
   if action == "open" then
     api.nvim_win_set_buf(0, buf)
@@ -79,11 +79,11 @@ M.open = function(buf, win, action)
   ------------------------ find largest string's width -----------------------------
   for _, v in ipairs(opts.header) do
     local headerw = strw(v)
-    if headerw > nvdash_w then
-      nvdash_w = headerw
+    if headerw > kawaiidash_w then
+      kawaiidash_w = headerw
     end
 
-    local col = math.floor((winw / 2) - math.floor(strw(v) / 2)) - 6
+    local col = math.floor((winw / 2) - math.floor(strw(v) / 2))
     local opt = { virt_text_win_col = col, virt_text = { { v, "NvDashAscii" } } }
     table.insert(ui, opt)
   end
@@ -104,8 +104,8 @@ M.open = function(buf, win, action)
       w = strw(type(v.txt) == "string" and v.txt or v.txt() .. (v.keys or ""))
     end
 
-    if nvdash_w < w then
-      nvdash_w = w
+    if kawaiidash_w < w then
+      kawaiidash_w = w
     end
 
     if v.group then
@@ -118,7 +118,7 @@ M.open = function(buf, win, action)
   end
 
   for i, v in ipairs(opts.buttons) do
-    local w = nvdash_w
+    local w = kawaiidash_w
     local col, opt
 
     if v.multicolumn then
@@ -126,7 +126,7 @@ M.open = function(buf, win, action)
         w = groups_maxw[v.group] or btn_widths[i]
       end
 
-      col = math.floor((winw / 2) - math.floor(w / 2)) - 6
+      col = math.floor((winw / 2) - math.floor(w / 2))
       opt = { virt_text_win_col = col, virt_text = multicolumn_virt_texts(v, w, btn_widths[i]) }
     else
       local str = type(v.txt) == "string" and v.txt or v.txt()
@@ -136,7 +136,7 @@ M.open = function(buf, win, action)
 
       str = v.rep and string.rep(str, w) or str
       str = v.keys and btn_gap(str, v.keys, w) or str
-      col = math.floor((winw / 2) - math.floor(w / 2)) - 6
+      col = math.floor((winw / 2) - math.floor(w / 2))
       opt = { virt_text_win_col = col, virt_text = { { str, v.hl or "NvdashButtons" } } }
     end
 
@@ -218,7 +218,7 @@ M.open = function(buf, win, action)
     key_movements(0, true)
   end, buf)
 
-  require("nvchad.utils").set_cleanbuf_opts("nvdash", buf)
+  require("nvchad.utils").set_cleanbuf_opts("kawaiiidash", buf)
 
   ----------------------- autocmds -----------------------------
   local group_id = api.nvim_create_augroup("NvdashAu", { clear = true })
@@ -227,7 +227,7 @@ M.open = function(buf, win, action)
     group = group_id,
     buffer = buf,
     callback = function()
-      vim.g.nvdash_displayed = false
+      vim.g.kawaiidash_displayed = false
       api.nvim_del_augroup_by_name "NvdashAu"
     end,
   })
@@ -235,8 +235,8 @@ M.open = function(buf, win, action)
   api.nvim_create_autocmd({ "WinResized", "VimResized" }, {
     group = group_id,
     callback = function()
-      vim.bo[vim.g.nvdash_buf].ma = true
-      require("nvchad.nvdash").open(vim.g.nvdash_buf, vim.g.nvdash_win, "redraw")
+      vim.bo[vim.g.kawaiidash_buf].ma = true
+      require("nvchad.kawaiidash").open(vim.g.kawaiidash_buf, vim.g.kawaiidash_win, "redraw")
     end,
   })
 end

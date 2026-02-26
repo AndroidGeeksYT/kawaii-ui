@@ -11,12 +11,12 @@ if config.ui.tabufline.enabled then
   require "nvchad.tabufline.lazyload"
 end
 
--- Command to toggle NvDash
-new_cmd("Nvdash", function()
-  if vim.g.nvdash_displayed then
-    require("nvchad.tabufline").close_buffer(vim.g.nvdash_buf)
+-- Command to toggle KawaiiDash
+new_cmd("Kawaiidash", function()
+  if vim.g.kawaiidash_displayed then
+    require("nvchad.tabufline").close_buffer(vim.g.kawaiidash_buf)
   else
-    require("nvchad.nvdash").open()
+    require("nvchad.kawaiidash").open()
   end
 end, {})
 

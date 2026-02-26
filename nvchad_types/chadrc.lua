@@ -8,7 +8,7 @@
 ---@field cheatsheet? NvCheatsheetConfig
 ---@field mason? MasonConfig
 ---@field colorify? ColorifyConfig
----@field nvdash? NvDashConfig
+---@field kawaiidash? NvDashConfig
 
 ---@class Base46Config
 --- List of highlights group to add.

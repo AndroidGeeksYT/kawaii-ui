@@ -1,15 +1,15 @@
 local autocmd = vim.api.nvim_create_autocmd
 local config = require "nvconfig"
 
--- load nvdash only on empty file
-if config.nvdash.load_on_startup then
+-- load kawaiidash only on empty file
+if config.kawaiidash.load_on_startup then
   local opening_file = vim.api.nvim_buf_get_name(0)
   local is_dir = vim.fn.isdirectory(opening_file) == 1
   local bufmodifed = vim.api.nvim_get_option_value("modified", { buf = 0 })
 
   if not bufmodifed and (is_dir or opening_file == "") then
     local current_buffer = vim.api.nvim_get_current_buf()
-    require("nvchad.nvdash").open()
+    require("nvchad.kawaiidash").open()
     vim.api.nvim_buf_delete(current_buffer, { force = true, unload = false })
   end
 end
@@ -36,7 +36,7 @@ autocmd("BufWritePost", {
   pattern = vim.tbl_map(function(path)
     return vim.fs.normalize(vim.uv.fs_realpath(path))
   end, vim.fn.glob(vim.fn.stdpath "config" .. "/lua/**/*.lua", true, true, true)),
-  group = vim.api.nvim_create_augroup("ReloadNvChad", {}),
+  group = vim.api.nvim_create_augroup("ReloadKawaii", {}),
 
   callback = function(opts)
     local fp = vim.fn.fnamemodify(vim.fs.normalize(vim.api.nvim_buf_get_name(opts.buf)), ":r") --[[@as string]]
@@ -61,10 +61,13 @@ local dir = vim.fn.stdpath "data" .. "/nvnotify1"
 if not vim.uv.fs_stat(dir) then
   vim.fn.mkdir(dir, "p")
   require "nvchad.winmes" {
-    { "* Blink.cmp plugin integration has been added, will be tested for 2 months" },
+    { [[* Welcome! kawaii user! ✧\(>o<)ﾉ✧]] },
     { " " },
-    { '* { import = "nvchad.blink.lazyspec" } in your plugins file' },
+    { " * Kawaii is an custom NvChad kawaii Neovim Distro! :)" },
     { " " },
-    { "* Discuss at https://github.com/NvChad/NvChad/discussions/3244" },
+    { "Follow me on:" },
+    { " * Youtube: @androidgeeksofficial" },
+    { " * GitHub: AndroidGeeksYT" },
+    { " * Reddit: AndroidGeeksYT" },
   }
 end
