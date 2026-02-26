@@ -120,5 +120,5 @@ local options = {
   },
 }
 
-local status, chadrc = pcall(require, "kawaiirc")
-return vim.tbl_deep_extend("force", options, status and chadrc or {})
+local status, kawaiirc = pcall(require, "kawaiirc")
+return vim.tbl_deep_extend("force", options, status and kawaiirc or {})

@@ -137,7 +137,7 @@ M.open = function(buf, win, action)
       str = v.rep and string.rep(str, w) or str
       str = v.keys and btn_gap(str, v.keys, w) or str
       col = math.floor((winw / 2) - math.floor(w / 2))
-      opt = { virt_text_win_col = col, virt_text = { { str, v.hl or "KawaiidashButtons" } } }
+      opt = { virt_text_win_col = col, virt_text = { { str, v.hl or "KawaiiDashButtons" } } }
     end
 
     table.insert(ui, opt)
