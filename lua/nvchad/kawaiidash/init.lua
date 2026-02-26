@@ -137,7 +137,7 @@ M.open = function(buf, win, action)
       str = v.rep and string.rep(str, w) or str
       str = v.keys and btn_gap(str, v.keys, w) or str
       col = math.floor((winw / 2) - math.floor(w / 2))
-      opt = { virt_text_win_col = col, virt_text = { { str, v.hl or "NvdashButtons" } } }
+      opt = { virt_text_win_col = col, virt_text = { { str, v.hl or "KawaiidashButtons" } } }
     end
 
     table.insert(ui, opt)
@@ -221,14 +221,14 @@ M.open = function(buf, win, action)
   require("nvchad.utils").set_cleanbuf_opts("kawaiiidash", buf)
 
   ----------------------- autocmds -----------------------------
-  local group_id = api.nvim_create_augroup("NvdashAu", { clear = true })
+  local group_id = api.nvim_create_augroup("KawaiidashAu", { clear = true })
 
   api.nvim_create_autocmd("BufWinLeave", {
     group = group_id,
     buffer = buf,
     callback = function()
       vim.g.kawaiidash_displayed = false
-      api.nvim_del_augroup_by_name "NvdashAu"
+      api.nvim_del_augroup_by_name "KawaiidashAu"
     end,
   })
 
