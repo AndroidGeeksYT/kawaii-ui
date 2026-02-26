@@ -218,7 +218,7 @@ M.open = function(buf, win, action)
     key_movements(0, true)
   end, buf)
 
-  require("nvchad.utils").set_cleanbuf_opts("kawaiiidash", buf)
+  require("nvchad.utils").set_cleanbuf_opts("kawaiidash", buf)
 
   ----------------------- autocmds -----------------------------
   local group_id = api.nvim_create_augroup("KawaiidashAu", { clear = true })
