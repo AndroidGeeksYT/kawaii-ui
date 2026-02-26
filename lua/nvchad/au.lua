@@ -61,9 +61,10 @@ local dir = vim.fn.stdpath "data" .. "/nvnotify1"
 if not vim.uv.fs_stat(dir) then
   vim.fn.mkdir(dir, "p")
   require "nvchad.winmes" {
-    { [[* Welcome! kawaii user! ✧\(>o<)ﾉ✧]] },
+    { [[ * Welcome! kawaii user! ✧\(>o<)ﾉ✧]] },
     { " " },
-    { " * Kawaii is an custom NvChad kawaii Neovim Distro! :)" },
+    { " * Kawaii is a custom NvChad Neovim Distro! :)" },
+    { " * Version: v1.0-shiroko" },
     { " " },
     { "Follow me on:" },
     { " * Youtube: @androidgeeksofficial" },
