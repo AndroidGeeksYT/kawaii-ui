@@ -8,7 +8,7 @@
 ---@field cheatsheet? NvCheatsheetConfig
 ---@field mason? MasonConfig
 ---@field colorify? ColorifyConfig
----@field kawaiidash? NvDashConfig
+---@field kawaiidash? KawaiiDashConfig
 
 ---@class Base46Config
 --- List of highlights group to add.
@@ -117,16 +117,16 @@
 --- ```
 ---@field modules? table<string, fun(): string>
 
----@class NvDashConfig
+---@class KawaiiDashConfig
 --- Whether to open dashboard on opening nvim
 ---@field load_on_startup? boolean
 --- Your ascii art
 --- Each string is one line
 ---@field header? string[] | (fun(): string[])
 --- List of buttons to show on the dashboard
----@field buttons? NvDashButtonConfig[]
+---@field buttons? KawaiiDashButtonConfig[]
 
----@class NvDashButtonConfig
+---@class KawaiiDashButtonConfig
 ---@field txt string | (fun(): string) # Descrption of the button
 ---@field hl? string name of the highlight group
 ---@field no_gap? boolean true by default, this wont make next line empty
