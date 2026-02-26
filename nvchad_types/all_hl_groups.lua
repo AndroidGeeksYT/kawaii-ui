@@ -220,7 +220,7 @@ error "Requiring a meta file"
 ---@field NvShTitle? Base46HLGroups # highlight group for nvshades
 ---@field KawaiiDashFooter? Base46HLGroups # highlight group for defaults
 ---@field KawaiiDashButtons? Base46HLGroups # highlight group for defaults
----@field NvDashAscii? Base46HLGroups # highlight group for defaults
+---@field KawaiiDashAscii? Base46HLGroups # highlight group for defaults
 ---@field NvChSection? Base46HLGroups # highlight group for nvcheatsheet
 ---@field NvChHeadyellow? Base46HLGroups # highlight group for nvcheatsheet
 ---@field NvChHeadwhite? Base46HLGroups # highlight group for nvcheatsheet

@@ -84,7 +84,7 @@ M.open = function(buf, win, action)
     end
 
     local col = math.floor((winw / 2) - math.floor(strw(v) / 2))
-    local opt = { virt_text_win_col = col, virt_text = { { v, "NvDashAscii" } } }
+    local opt = { virt_text_win_col = col, virt_text = { { v, "KawaiiDashAscii" } } }
     table.insert(ui, opt)
   end
 
