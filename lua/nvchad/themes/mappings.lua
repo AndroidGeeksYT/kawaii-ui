@@ -19,7 +19,7 @@ map("n", { "k", "<Up>" }, nvapi.move_up, { buffer = state.input_buf })
 map({ "i", "n" }, { "<cr>" }, function()
   state.confirmed = true
   local name = state.themes_shown[state.index]
-  package.loaded.chadrc = nil
+  package.loaded.kawaiirc = nil
   local old_theme = require("chadrc").base46.theme
 
   old_theme = '"' .. old_theme .. '"'
