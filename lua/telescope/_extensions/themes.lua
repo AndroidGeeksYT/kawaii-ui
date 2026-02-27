@@ -59,11 +59,11 @@ local function switcher()
         reload_theme(action_state.get_selected_entry()[1])
       end)
 
-      ------------ save theme to chadrc on enter ----------------
+      ------------ save theme to kawaiirc on enter ----------------
       actions.select_default:replace(function()
         if action_state.get_selected_entry() then
-          package.loaded.chadrc = nil
-          local old_theme = require("chadrc").base46.theme
+          package.loaded.kawaiirc = nil
+          local old_theme = require("kawaiirc").base46.theme
           old_theme = '"' .. old_theme .. '"'
 
           local theme = '"' .. action_state.get_selected_entry()[1] .. '"'

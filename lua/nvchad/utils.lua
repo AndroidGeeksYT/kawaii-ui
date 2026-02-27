@@ -22,7 +22,7 @@ M.list_themes = function()
 end
 
 M.replace_word = function(old, new, filepath)
-  filepath = filepath or vim.fn.stdpath "config" .. "/lua/" .. "chadrc.lua"
+  filepath = filepath or vim.fn.stdpath "config" .. "/lua/" .. "kawaiirc.lua"
 
   local file = io.open(filepath, "r")
   if file then
@@ -56,7 +56,7 @@ M.reload = function(module)
   end
 
   require("plenary.reload").reload_module "nvconfig"
-  require("plenary.reload").reload_module "chadrc"
+  require("plenary.reload").reload_module "kawaiirc"
   require("plenary.reload").reload_module "base46"
   require("plenary.reload").reload_module "nvchad"
 

@@ -21,7 +21,7 @@ CONTENTS                                                         *nvui.contents*
  1. `Introduction`                                      |nvui.intro|
     1.1 UI & Base46 Plugin Install                    |nvui.plugin-install|
  
- 2. `Default Chadrc Options`                            |nvui.chadrc.options|
+ 2. `Default kawaiirc options`                            |nvui.chadrc.options|
  
  3. `Tabufline`                                         |nvui.tabufline|
     3.1 Api functions                                 |nvui.tabufline.api|
@@ -62,7 +62,7 @@ CONTENTS                                                         *nvui.contents*
                              ─────────────────
 
       ` ┌────────────────────────┐         ┌────────────────────────────┐
-      ` │      nvconfig.lua     │         │        chadrc.lua         │
+      ` │      nvconfig.lua     │         │        kawaiirc.lua         │
       ` ├────────────────────────┤         ├────────────────────────────┤
        │  Has default options  │        │  User options             │
        │                        │         │  These override nvconfig  │
@@ -79,7 +79,7 @@ CONTENTS                                                         *nvui.contents*
                       Available in |require('nvconfig')|
      	              Then used by UI & Base46 plugin
 
-The file `lua/chadrc.lua` is user's config file used to customize Base46 & UI
+The file `lua/kawaiirc.lua` is user's config file used to customize Base46 & UI
 plugin and it needs to return a table, example:
 >lua
  local M = {}
@@ -125,7 +125,7 @@ Base46 setup
  dofile(vim.g.base46_cache .. "statusline")
 
 ==============================================================================
-2. Default Chadrc Options                                  *nvui.chadrc.options*
+2. Default kawaiirc options                                  *nvui.chadrc.options*
 
 These are the default options for UI/Base46 plugin. No need to write them all 
 Only those you want to change and the it'll override the defaults.
@@ -546,7 +546,7 @@ To change the theme without theme switcher:
 
 Setting themes outside of Neovim: ~
 >bash
- # run code that saves theme name in chadrc first
+ # run code that saves theme name in kawaiirc first
  # then loop over all nvim instances and send the function!
  
  for addr in $XDG_RUNTIME_DIR/nvim.*; do
@@ -683,7 +683,7 @@ There are 2 telescope extensions available : themes, terms
 9.1 Base46 themes                                       *nvui.telescope.themes*
 
 - This will list all base46 themes in telescope window and cycling over them
-  will change themes on fly, pressing enter will save the theme to chadrc.lua
+  will change themes on fly, pressing enter will save the theme to kawaiirc.lua
 
 Command : `Telescope themes`
 
@@ -746,7 +746,7 @@ for example if you configured clangd in your lspconfig, then it will install
 clangd too. You dont have to manually go to mason and install it.
 
 - Currently supported plugins : `lspconfig, conform, nvim-lint`
-- You can explicitly add packages in M.mason.pkgs of your chadrc
+- You can explicitly add packages in M.mason.pkgs of your kawaiirc
 
 NOTE: API
 >lua
