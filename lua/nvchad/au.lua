@@ -66,7 +66,7 @@ if not vim.uv.fs_stat(dir) then
     { " * Kawaii is a custom NvChad Neovim Distro! :)" },
     { " * Version: v1.0-shiroko" },
     { " " },
-    { "Follow me on:" },
+    { " Follow me on:" },
     { " * Youtube: @androidgeeksofficial" },
     { " * GitHub: AndroidGeeksYT" },
     { " * Reddit: AndroidGeeksYT" },
