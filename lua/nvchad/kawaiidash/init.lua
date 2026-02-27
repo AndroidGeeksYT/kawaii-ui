@@ -130,6 +130,12 @@ M.open = function(buf, win, action)
       opt = { virt_text_win_col = col, virt_text = multicolumn_virt_texts(v, w, btn_widths[i]) }
     else
       local str = type(v.txt) == "string" and v.txt or v.txt()
+
+      if v.version then
+        local ver = type(v.version) == "function" and v.version() or v.version
+        str = str .. "  |  " .. ver
+      end
+
       if v.content == "fit" or v.group then
         w = groups_maxw[v.group] or strw(str)
       end

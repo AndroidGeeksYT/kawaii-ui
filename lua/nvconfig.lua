@@ -79,6 +79,9 @@ local options = {
           local ms = math.floor(stats.startuptime) .. " ms"
           return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
         end,
+        version = function()
+          return "v1.1-shiroko-releases"
+        end,
         hl = "KawaiiDashFooter",
         no_gap = true,
         content = "fit",
