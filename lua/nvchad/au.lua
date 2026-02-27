@@ -62,9 +62,8 @@ if not vim.uv.fs_stat(dir) then
   vim.fn.mkdir(dir, "p")
   require "nvchad.winmes" {
     { [[ * Welcome! kawaii user! ✧\(>o<)ﾉ✧]] },
-    { " " },
     { " * Kawaii is a custom NvChad Neovim Distro! :)" },
-    { " * Version: v1.0-shiroko" },
+    { " * Version: v1.1-shiroko" },
     { " " },
     { " Follow me on:" },
     { " * Youtube: @androidgeeksofficial" },
