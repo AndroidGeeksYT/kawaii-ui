@@ -1,5 +1,5 @@
 local M = {}
-local ui = require("nvconfig").ui.cmp
+local ui = require("kawaii").ui.cmp
 local atom_styled = ui.style == "atom" or ui.style == "atom_colored"
 
 local menu_cols

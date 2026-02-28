@@ -1,5 +1,5 @@
 local api = vim.api
-local config = require "nvconfig"
+local config = require "kawaii"
 local new_cmd = api.nvim_create_user_command
 
 if config.ui.statusline.enabled then

@@ -1,7 +1,7 @@
 local M = {}
 local api = vim.api
 local get_extmarks = api.nvim_buf_get_extmarks
-local conf = require("nvconfig").colorify
+local conf = require("kawaii").colorify
 local ns = require("nvchad.colorify.state").ns
 
 function M.is_dark(hex)

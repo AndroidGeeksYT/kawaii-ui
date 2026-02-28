@@ -2,7 +2,7 @@ local M = {}
 local api = vim.api
 local fn = vim.fn
 local strw = api.nvim_strwidth
-local opts = require("nvconfig").kawaiidash
+local opts = require("kawaii").kawaiidash
 
 local map = function(keys, action, buf)
   for _, v in ipairs(keys) do

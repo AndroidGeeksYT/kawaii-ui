@@ -8,7 +8,7 @@ local action_set = require "telescope.actions.set"
 local action_state = require "telescope.actions.state"
 
 local function reload_theme(name)
-  require("nvconfig").base46.theme = name
+  require("kawaii").base46.theme = name
   require("base46").load_all_highlights()
 end
 

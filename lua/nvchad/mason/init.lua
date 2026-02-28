@@ -1,7 +1,7 @@
 local M = {}
 local masonames = require "nvchad.mason.names"
-local pkgs = require("nvconfig").mason.pkgs
-local skipped = require("nvconfig").mason.skip
+local pkgs = require("kawaii").mason.pkgs
+local skipped = require("kawaii").mason.skip
 
 M.get_pkgs = function()
   local tools = {}

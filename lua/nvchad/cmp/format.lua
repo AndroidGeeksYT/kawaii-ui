@@ -1,6 +1,6 @@
 local M = {}
 local api = vim.api
-local cmp_ui = require("nvconfig").ui.cmp
+local cmp_ui = require("kawaii").ui.cmp
 local icon = cmp_ui.format_colors.icon .. " "
 
 local hlcache = {}

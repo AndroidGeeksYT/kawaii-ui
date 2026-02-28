@@ -20,7 +20,7 @@ M.filter = function(tb, str)
 end
 
 M.reload_theme = function(name)
-  require("nvconfig").base46.theme = name
+  require("kawaii").base46.theme = name
   require("base46").load_all_highlights()
   require("plenary.reload").reload_module "volt.highlights"
   require "volt.highlights"

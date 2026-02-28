@@ -1,13 +1,13 @@
 local M = {}
 local api = vim.api
-local config = require "nvconfig"
+local config = require "kawaii"
 
 local function capitalize(str)
   return (str:gsub("^%l", string.upper))
 end
 
 M.get_mappings = function(mappings, tb_to_add)
-  local excluded_groups = require("nvconfig").cheatsheet.excluded_groups
+  local excluded_groups = require("kawaii").cheatsheet.excluded_groups
 
   for _, v in ipairs(mappings) do
     local desc = v.desc

@@ -62,10 +62,10 @@ CONTENTS                                                         *nvui.contents*
                              ─────────────────
 
       ` ┌────────────────────────┐         ┌────────────────────────────┐
-      ` │      nvconfig.lua     │         │        kawaiirc.lua         │
+      ` │      kawaii.lua       │         │        kawaiirc.lua       │
       ` ├────────────────────────┤         ├────────────────────────────┤
        │  Has default options  │        │  User options             │
-       │                        │         │  These override nvconfig  │
+       │                        │         │  These override kawaii    │
        │  {                     │         └────────────┬───────────────┘
        │    ui = {...},         │                      │
        │    base46 = {...},     │                      │
@@ -76,7 +76,7 @@ CONTENTS                                                         *nvui.contents*
                                       │      
                                       ▼      
                       The options are merged 
-                      Available in |require('nvconfig')|
+                      Available in |require('kawaii')|
      	              Then used by UI & Base46 plugin
 
 The file `lua/kawaiirc.lua` is user's config file used to customize Base46 & UI
@@ -131,7 +131,7 @@ These are the default options for UI/Base46 plugin. No need to write them all
 Only those you want to change and the it'll override the defaults.
 
 Always check as its Up to date. 
-nvconfig file : |https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua|
+kawaii file : |https://github.com/AndroidGeeks/kawaii-ui/blob/kawaii/lua/kawaii.lua|
 >lua
  {
    base46 = {
@@ -202,7 +202,7 @@ nvconfig file : |https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua|
      buttons = {
        { txt = "  Find File", keys = "Spc f f", cmd = "Telescope find_files" },
        { txt = "  Recent Files", keys = "Spc f o", cmd = "Telescope oldfiles" },
-       -- more... check nvconfig.lua file for full list of buttons
+       -- more... check kawaii.lua file for full list of buttons
      },
    }
  
@@ -541,7 +541,7 @@ Theme Switching manually: ~
 Users sometimes use scripts or programs that set system theme, like pywal etc
 To change the theme without theme switcher:
 >lua
- require("nvconfig").base46.theme = 'nord'
+ require("kawaii").base46.theme = 'nord'
  require("base46").load_all_highlights()
 
 Setting themes outside of Neovim: ~

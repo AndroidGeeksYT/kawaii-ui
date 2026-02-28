@@ -1,6 +1,6 @@
 local api = vim.api
 local set_extmark = api.nvim_buf_set_extmark
-local conf = require("nvconfig").colorify
+local conf = require("kawaii").colorify
 local utils = require "nvchad.colorify.utils"
 local ns = require("nvchad.colorify.state").ns
 local needs_hl = utils.not_colored
