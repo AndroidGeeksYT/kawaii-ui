@@ -86,7 +86,7 @@ local options = {
 
       {
         txt = function()
-          return "v1.1-shiroko-releases"
+          return "v1.2-shiroko-releases"
         end,
         hl = "KawaiiDashFooter",
         no_gap = true,
