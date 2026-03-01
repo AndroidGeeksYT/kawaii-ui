@@ -21,7 +21,7 @@ CONTENTS                                                         *nvui.contents*
  1. `Introduction`                                      |nvui.intro|
     1.1 UI & Base46 Plugin Install                    |nvui.plugin-install|
  
- 2. `Default kawaiirc options`                            |nvui.chadrc.options|
+ 2. `Default kawaiirc options`                          |nvui.kawaiirc.options|
  
  3. `Tabufline`                                         |nvui.tabufline|
     3.1 Api functions                                 |nvui.tabufline.api|
@@ -125,7 +125,7 @@ Base46 setup
  dofile(vim.g.base46_cache .. "statusline")
 
 ==============================================================================
-2. Default kawaiirc options                                  *nvui.chadrc.options*
+2. Default kawaiirc options                             *nvui.kawaiirc.options*
 
 These are the default options for UI/Base46 plugin. No need to write them all 
 Only those you want to change and the it'll override the defaults.
