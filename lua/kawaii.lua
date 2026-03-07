@@ -68,8 +68,8 @@ local options = {
       { txt = "  Find File", keys = "ff", cmd = "Telescope find_files" },
       { txt = "  Recent Files", keys = "fo", cmd = "Telescope oldfiles" },
       { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
-      { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
-      { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
+      { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('kawaii.themes').open()" },
+      { txt = "  Mappings", keys = "ch", cmd = "KwCheatsheet" },
 
       { txt = "─", hl = "KawaiiDashFooter", no_gap = true, rep = true },
 
@@ -86,7 +86,7 @@ local options = {
 
       {
         txt = function()
-          return "v1.2-shiroko-releases"
+          return "v1.3-シロコ-shiroko"
         end,
         hl = "KawaiiDashFooter",
         no_gap = true,

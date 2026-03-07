@@ -1,13 +1,41 @@
+<div align="center">
+  <p>
+    <img
+      src="https://img.shields.io/badge/Maintained%3F-YES-blue?style=for-the-badge"
+    />
+    <img
+      src="https://img.shields.io/github/license/AndroidGeeksYT/kawaii-ui?color=blue&style=for-the-badge"
+    />
+    <img
+      src="https://img.shields.io/github/stars/AndroidGeeksYT/kawaii-ui?color=blue&style=for-the-badge"
+    />
+    <img
+      src="https://img.shields.io/github/forks/AndroidGeeksYT/kawaii-ui?color=blue&style=for-the-badge"
+    />
+    <img
+      src="https://img.shields.io/github/issues/AndroidGeeksYT/kawaii-ui?color=blue&style=for-the-badge"
+    />
+  </p>
+
+  <p>
+    <img
+      src="https://github.com/AndroidGeeksYT/AndroidGeeksYT/blob/main/assets/gif/shiroko.gif?raw=true"
+      width="400"
+      alt="Shiroko"
+    />
+  </p>
+</div>
+
 # Kawaii UI Plugin
 
 This ui plugin is a collection of many UI modules like statusline, tabline, cheatsheet, kawaiidash and much more!
 
-- Docs at `:h nvui`
+- Docs at `:h kwui`
 
 ## Install
 
 - Create `lua/kawaiirc.lua` file that returns a table, can be empty table too.
-- Table structure must be same as [kawaii.lua](https://github.com/AndroidGeeksYT/kawaii-ui/blob/kawaii/lua/kawaii.lua)
+- Table structure must be the same as [kawaii.lua](https://github.com/AndroidGeeksYT/kawaii-ui/blob/kawaii/lua/kawaii.lua)
 
 In your plugins file
 
@@ -16,14 +44,14 @@ In your plugins file
  { "nvim-tree/nvim-web-devicons", lazy = true },
 
  {
-   "nvchad/ui",
+   "AndroidGeeksYT/kawaii-ui",
     config = function()
-      require "nvchad"
+      require "kawaii"
     end
  },
 
  {
-    "nvchad/base46",
+    "AndroidGeeksYT/kawaii-base",
     lazy = true,
     build = function()
       require("base46").load_all_highlights()
@@ -60,13 +88,15 @@ Base46 setup
 - Each tab will have its own set of buffers stored, and the tabufline will show those only.
 - Think of it like workspaces on Linux/Windows where windows stay in their own workspaces, but in vim buffers from all tabs will be shown in every tab!
 
-[NvChad - Maintain buffers per tab! ( tabufline ) ｜ Neovim [V_9iJ96U_k8].webm](https://github.com/user-attachments/assets/ff3026f3-7943-4f71-9cba-373035d9b4c5)
+<!--[NvChad - Maintain buffers per tab! ( tabufline ) ｜ Neovim [V_9iJ96U_k8].webm](https://github.com/user-attachments/assets/ff3026f3-7943-4f71-9cba-373035d9b4c5)-->
+
+(Note: Kawaii is still using NvChad's image and videos preview's)
 
 ## Statusline
 
 - Statusline with 4 different styles
 
-![nvchad statusline](https://nvchad.com/features/statuslines.webp)
+![kawaii statusline](https://nvchad.com/features/statuslines.webp)
 
 ## Term
 
@@ -76,7 +106,7 @@ Base46 setup
 
 ## Lsp Signature
 
-- Minimal signature window ( [50 LOC ~](https://github.com/NvChad/ui/blob/v3.0/lua/nvchad/lsp/signature.lua)), just uses `vim.lsp.buf.signature_help` on some autocmds.
+- Minimal signature window ( [50 LOC ~](https://github.com/AndroidGeeksYT/kawaii-ui/blob/kawaii/lua/kawaii/lsp/signature.lua)), just uses `vim.lsp.buf.signature_help` on some autocmds.
 
 ![image](https://github.com/user-attachments/assets/b2db5cd1-a81b-41a7-a132-7d2dc15edf39)
 
@@ -104,7 +134,7 @@ Base46 setup
 ## Cmp styles
 
 - A lot of cmp theming with base46!
-- Do know that nvchad's base46 has like 68 themes, so dont judge the screenshots by colors!
+- Do know that kawaii's base46 has like 68 themes, so dont judge the screenshots by colors!
 - Support for Tailwind & Css LSP colors
 
 ![image](https://github.com/user-attachments/assets/661bbc0f-7073-4b4c-81cb-7cf035e29d6f)
@@ -121,7 +151,7 @@ Base46 setup
 
 ![image](https://github.com/user-attachments/assets/897e46f1-9ae2-4cc2-8fa2-64eff40a90dd)
 
-## NvCheatsheet
+## KwCheatsheet
 
 - Auto-generated mappings cheatsheet module, which has a similar layout to that of CSS's masonry layout.
 - It has 2 themes ( grid & simple )
@@ -140,17 +170,20 @@ require("lspconfig").clangd.setup{}
 
 Then running MasonInstallAll will install both the mason pkgs
 
-check `:h nvui.mason` for more info
+check `:h kwui.mason` for more info
 
 # Credits
 
-- Huge thanks to [@lucario387](https://github.com/lucario387) for creating `nvchad_types`.
+- Huge thanks to [@lucario387](https://github.com/lucario387) for creating `nvchad_types` on kawaii it is `kawaii_types`.
 
 ## :gift_heart: Support
 
-If you like NvChad or its plugins and would like to support it via donation
+If you like Kawaii or its plugins and would like to support it via donation
 
-[![kofi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/siduck)
-[![paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/siduck13)
-[![buymeacoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/siduck)
-[![patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/siduck)
+<div align="center">
+  <p>
+    <img
+      src="https://github.com/AndroidGeeksYT/AndroidGeeks-Kickstart-Nvim/blob/main/img/donate.jpg"
+    />
+  </p>
+</div>

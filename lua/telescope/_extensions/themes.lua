@@ -17,7 +17,7 @@ local function switcher()
 
   -- show current buffer content in previewer
   local previewer = previewers.new_buffer_previewer {
-    define_preview = function(self, entry)
+    define_preview = function(self, _)
       -- add content
       local lines = vim.api.nvim_buf_get_lines(bufnr, 0, -1, false)
       vim.api.nvim_buf_set_lines(self.state.bufnr, 0, -1, false, lines)
@@ -30,10 +30,10 @@ local function switcher()
 
   -- our picker function: colors
   local picker = pickers.new {
-    prompt_title = "󱥚 Set NvChad Theme",
+    prompt_title = "󱥚 Set Kawaii Theme",
     previewer = previewer,
     finder = finders.new_table {
-      results = require("nvchad.utils").list_themes(),
+      results = require("kawaii.utils").list_themes(),
     },
     sorter = conf.generic_sorter(),
 
@@ -68,7 +68,7 @@ local function switcher()
 
           local theme = '"' .. action_state.get_selected_entry()[1] .. '"'
 
-          require("nvchad.utils").replace_word(old_theme, theme)
+          require("kawaii.utils").replace_word(old_theme, theme)
           actions.close(prompt_bufnr)
         end
       end)
