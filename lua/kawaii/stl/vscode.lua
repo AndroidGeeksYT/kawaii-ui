@@ -1,4 +1,4 @@
-local utils = require "kawaii.stl.utils"
+local utils = require "kwconfig.stl.utils"
 
 local M = {}
 
