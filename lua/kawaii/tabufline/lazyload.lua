@@ -1,4 +1,4 @@
-local opts = require("kawaii").ui.tabufline
+local opts = require("kwconfig").ui.tabufline
 local api = vim.api
 local get_opt = api.nvim_get_option_value
 local cur_buf = api.nvim_get_current_buf

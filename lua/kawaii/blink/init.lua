@@ -1,5 +1,5 @@
 local M = {}
-local ui = require("kawaii").ui.cmp
+local ui = require("kwconfig.lua").ui.cmp
 local atom_styled = ui.style == "atom" or ui.style == "atom_colored"
 
 local menu_cols

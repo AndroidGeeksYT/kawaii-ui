@@ -1,7 +1,7 @@
 local M = {}
 local masonames = require "kawaii.mason.names"
-local pkgs = require("kawaii").mason.pkgs
-local skipped = require("kawaii").mason.skip
+local pkgs = require("kwconfig").mason.pkgs
+local skipped = require("kwconfig").mason.skip
 
 M.get_pkgs = function()
   local tools = {}

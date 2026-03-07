@@ -1,6 +1,6 @@
 local api = vim.api
 local set_extmark = api.nvim_buf_set_extmark
-local conf = require("kawaii").colorify
+local conf = require("kwconfig").colorify
 local utils = require "kawaii.colorify.utils"
 local ns = require("kawaii.colorify.state").ns
 local needs_hl = utils.not_colored

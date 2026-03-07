@@ -7,7 +7,7 @@ local btn = require("kawaii.tabufline.utils").btn
 local strep = string.rep
 local style_buf = require("kawaii.tabufline.utils").style_buf
 local cur_buf = api.nvim_get_current_buf
-local opts = require("kawaii").ui.tabufline
+local opts = require("kwconfig").ui.tabufline
 
 local M = {}
 g.toggle_theme_icon = "   "

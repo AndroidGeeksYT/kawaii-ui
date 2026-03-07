@@ -1,4 +1,4 @@
-local cmp_ui = require("kawaii").ui.cmp
+local cmp_ui = require("kwconfig").ui.cmp
 local cmp_style = cmp_ui.style
 local format_color = require "kawaii.cmp.format"
 

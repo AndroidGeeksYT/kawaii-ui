@@ -1,5 +1,5 @@
 local autocmd = vim.api.nvim_create_autocmd
-local config = require "kawaii"
+local config = require "kwconfig"
 
 -- load kawaiidash only on empty file
 if config.kawaiidash.load_on_startup then

@@ -62,10 +62,10 @@ CONTENTS                                                         *kwui.contents*
                              ─────────────────
 
       ` ┌────────────────────────┐         ┌────────────────────────────┐
-      ` │      kawaii.lua       │         │        kawaiirc.lua       │
+      ` │      kwconfig.lua     │         │        kawaiirc.lua       │
       ` ├────────────────────────┤         ├────────────────────────────┤
        │  Has default options  │        │  User options             │
-       │                        │         │  These override kawaii    │
+       │                        │         │  These override kwconfig  │
        │  {                     │         └────────────┬───────────────┘
        │    ui = {...},         │                      │
        │    base46 = {...},     │                      │
@@ -76,7 +76,7 @@ CONTENTS                                                         *kwui.contents*
                                       │      
                                       ▼      
                       The options are merged 
-                      Available in |require('kawaii')|
+                      Available in |require('kwconfig')|
      	              Then used by UI & Base46 plugin
 
 The file `lua/kawaiirc.lua` is user's config file used to customize Base46 & UI
@@ -131,7 +131,7 @@ These are the default options for UI/Base46 plugin. No need to write them all
 Only those you want to change and then it'll override the defaults.
 
 Always check if it's up to date. 
-kawaii file : |https://github.com/AndroidGeeks/kawaii-ui/blob/kawaii/lua/kawaii.lua|
+kawaii file : |https://github.com/AndroidGeeks/kawaii-ui/blob/kawaii/lua/kwconfig.lua|
 >lua
  {
    base46 = {
@@ -202,7 +202,7 @@ kawaii file : |https://github.com/AndroidGeeks/kawaii-ui/blob/kawaii/lua/kawaii.
      buttons = {
        { txt = "  Find File", keys = "Spc f f", cmd = "Telescope find_files" },
        { txt = "  Recent Files", keys = "Spc f o", cmd = "Telescope oldfiles" },
-       -- more... check kawaii.lua file for full list of buttons
+       -- more... check kwconfig.lua file for full list of buttons
      },
    }
  
@@ -541,7 +541,7 @@ Theme Switching manually: ~
 Users sometimes use scripts or programs that set system theme, like pywal etc
 To change the theme without theme switcher:
 >lua
- require("kawaii").base46.theme = 'nord'
+ require("kwconfig").base46.theme = 'nord'
  require("base46").load_all_highlights()
 
 Setting themes outside of Neovim: ~

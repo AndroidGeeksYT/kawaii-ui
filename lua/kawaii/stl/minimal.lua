@@ -1,4 +1,4 @@
-local config = require("kawaii").ui.statusline
+local config = require("kwconfig").ui.statusline
 local sep_style = config.separator_style
 local utils = require "kawaii.stl.utils"
 

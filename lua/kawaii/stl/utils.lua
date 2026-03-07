@@ -14,7 +14,7 @@ local orders = {
 }
 
 M.generate = function(theme, modules)
-  local config = require("kawaii").ui.statusline
+  local config = require("kwconfig").ui.statusline
   local order = config.order or orders[theme]
   local result = {}
 
